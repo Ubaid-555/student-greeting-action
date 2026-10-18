@@ -1,0 +1,16 @@
+name: Student Greeting
+description: Greet a student and expose a message output
+author: Ubaidullah Zubair
+inputs:
+  name:
+    description: Student name
+    required: true
+  greeting:
+    description: Greeting text
+    default: Hello
+outputs:
+  message:
+    description: The completed greeting
+runs:
+  using: node24
+  main: dist/index.js
